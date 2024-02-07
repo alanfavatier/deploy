@@ -5,6 +5,8 @@ import Detail from './views/Detail/Detail';
 import Home from './views/home/Home';
 import LandingPage from "./views/Landing/Landing";
 import PATHROUTES from "./helpers/pathRoutes";
+import axios from "axios";
+axios.defaults.baseURL= `http://localhost:3001`
 
 
 function App() {

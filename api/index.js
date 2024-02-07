@@ -19,11 +19,11 @@
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const server = require('./src/app.js'); // requiero mi servidor que esta en app.js
 const { conn } = require('./src/db.js');//REQUIERO MI INSTANCIA DE SEQUELICE QUE ME VA A PERMITIR HACER LA CONEXION DE MI SERVIDOR CON LA BASE DE DATOS.
-
+require("dotenv").config();
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {// (CONN.SYNC) QUE HACE ? => EN CUANTO LEVANTO MI SERVIDOR SE HACE LA CONEXION DE MI SERVIDOR CON LA BASE DE DATOS(EN REALIDAD NO SE CONECTAN SINO QUE SE COMUNICAN)
   //EL FORCE TRUE PERMITE BORRAR TODO LO DE LA BASE DE DATOS Y VOLVER A CREAR LA TABLA CON LAS MODIFICACION.
-  server.listen(3001, () => {// levanto mi servidor en el puerto 3001
-    console.log('%s listening at 3001'); // eslint-disable-line no-console
+  server.listen(process.env.PORT, () => {// levanto mi servidor en el puerto 3001
+    console.log('%s listening at ', process.env.PORT); // eslint-disable-line no-console
   });
 });

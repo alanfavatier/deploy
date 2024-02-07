@@ -12,7 +12,7 @@ export const SET_PAGE = "SET_PAGE";
 export function getDogs() {
   return async function (dispatch) {
     try {
-      const response = await axios.get(`http://localhost:3001/dogs`);
+      const response = await axios.get(`/dogs`);
       dispatch({
         type: GET_DOGS,
         payload: response.data,
@@ -26,7 +26,7 @@ export function getDogs() {
 export function getByName(name) {
   return async function (dispatch) {
     try {
-      const response = await axios(`http://localhost:3001/dogs?name=${name}`);
+      const response = await axios(`/dogs?name=${name}`);
 
       dispatch({
         type: GET_BY_NAME,
@@ -41,7 +41,7 @@ export function getByName(name) {
 //obtiene el perro que busco por id.
 export const getDogDetails = (id) => async (dispatch) => {
   try {
-    const response = await axios.get(`http://localhost:3001/dogs/${id}`);
+    const response = await axios.get(`/dogs/${id}`);
 
     dispatch({ type: GET_DOG_DETAILS, payload: response.data });
   } catch (error) {

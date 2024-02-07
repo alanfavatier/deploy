@@ -3,7 +3,7 @@ const { Sequelize } = require('sequelize');//sequelize es un orm que permite int
 const fs = require('fs');
 const path = require('path');
 const {
-  DB_USER, DB_PASSWORD, DB_HOST,
+  DB_USER, DB_PASSWORD, DB_HOST
 } = process.env; // ME TRAIGO MIS VARIABLES DE ENTORNO QUE ESTAN EN .ENV
 const DogsModel = require("./models/Dog.js")//TRAIGO MI MODELO
 const TemperamentsModel= require("./models/Temperament.js")//TRAIGO MI MODELO
