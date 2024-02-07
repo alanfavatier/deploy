@@ -3,14 +3,14 @@ const { Sequelize } = require('sequelize');//sequelize es un orm que permite int
 const fs = require('fs');
 const path = require('path');
 const {
-  DB_USER, DB_PASSWORD, DB_HOST
+  DB_USER, DB_PASSWORD, DB_HOST,DB_NAME,DB_PORT
 
-  
+
 } = process.env; // ME TRAIGO MIS VARIABLES DE ENTORNO QUE ESTAN EN .ENV
 const DogsModel = require("./models/Dog.js")//TRAIGO MI MODELO
 const TemperamentsModel= require("./models/Temperament.js")//TRAIGO MI MODELO
 
-const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/dogs`, {// INICIALIZO MI SERVIDOR CON LA BASE DE DATOS. CONECTA MI SERVIDOR CON MI BASE DE DATOS.
+const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`, {// INICIALIZO MI SERVIDOR CON LA BASE DE DATOS. CONECTA MI SERVIDOR CON MI BASE DE DATOS.
   logging: false, // set to console.log to see the raw SQL queries
   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
 });
