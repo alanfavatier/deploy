@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../image/pexels-josé-antonio-espinosa-17473725.jpg') center/cover no-repeat;
+
+  /* Configurar el tamaño y la repetición de la imagen de fondo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* Puedes cambiar a 'scroll' si prefieres que la imagen se desplace con el contenido */
+
+  /* Asegurarse de que el texto sea legible sobre la imagen */
+  color: #ffffff;
+  /* Cambia a un color de texto que sea fácilmente legible sobre la imagen */
+
+  /* Establecer un degradado como fondo de respaldo si la imagen no se carga o está desactivada */
+
+}
+
+.home-title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 30px;
+  color: rgb(239, 242, 239);
+  font-family: "Bigelow Rules";
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.crearPerro {
+  background-color: #e9f1e98a;
+  color: black;
+  margin-left: 92%;
+  margin-top: 1px;
+  position: absolute;
+  padding: 9px;
+  padding: 20px;
+
+
+}
+
+.crearPerro:hover {
+  background-color: #2f96f770;
+  color: black;
+  margin-left: 92%;
+  margin-top: 1px;
+  position: absolute;
+  padding: 9px;
+  padding: 20px;
+
+}

@@ -1,0 +1,38 @@
+.botonvolver {
+  background-color: #e9f1e98a;
+  color: black;
+  margin-left: 25%;
+  margin-top: 4;
+  margin-bottom: 0;
+}
+
+.botonvolver:hover {
+  background-color: #2f96f770;
+  color: black;
+  margin-left: 25%;
+  margin-top: 4;
+  margin-bottom: 0;
+}
+
+.detailContainer {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.dogImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px ;
+
+}
+
+.dogInfo {
+  text-decoration: none;
+  color: rgb(234, 229, 229);
+  font-size: 18px;
+  margin-bottom: 3px;
+  border-radius: 10px;
+  padding: 7px;
+  border: 1px solid #e9f1e98a;
+  color: rgb(233, 230, 230);
+}

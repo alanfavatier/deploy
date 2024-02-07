@@ -1,0 +1,33 @@
+.formulario {
+  display: flex;
+  align-items: center;
+}
+
+.campo {
+  padding: 8px;
+  width: 220px;
+  border: none;
+  border-radius: 4px;
+}
+.campo:hover {
+  padding: 8px;
+  width: 220px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2f96f770;
+  
+}
+
+.boton {
+  padding: 8px 10px;
+  background-color: rgba(206, 210, 206, 0.859);
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #2f96f770;
+  color: black;
+}

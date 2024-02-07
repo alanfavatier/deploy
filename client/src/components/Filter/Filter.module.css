@@ -1,0 +1,13 @@
+.botones{
+    background-color: #e9f1e98a;
+    color: black;
+}
+
+.botones:hover{
+    background-color: #2f96f770;
+    color: black;
+}
+
+.contenedorBotones{
+    margin-top: 4%;
+}

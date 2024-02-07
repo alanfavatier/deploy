@@ -1,0 +1,53 @@
+.card-list {
+  width: 85vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+
+
+}
+
+.dog-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+
+  /* Otros estilos que desees agregar */
+}
+
+/* En tu archivo CSS o componente Cards.style.css */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #2f96f770;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #e9f1e98a;
+  color: black;
+}
+
+.pagination span {
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  background-color: #b7c2ca;
+  cursor: not-allowed;
+}

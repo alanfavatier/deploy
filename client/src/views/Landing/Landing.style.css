@@ -1,0 +1,42 @@
+/* LandingPage.css */
+.landing-page {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../image/coleccion-retratos-adorables-cachorros.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8; /* Ajusta la opacidad según sea necesario */
+  }
+  
+  .content {
+    z-index: 1;
+  }
+  
+  button {
+    margin: 15px;
+    background-color: rgba(119, 52, 219, 0.549);
+    color: rgb(14, 14, 14);
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
