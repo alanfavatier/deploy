@@ -24,7 +24,7 @@ const Create = () => {
   useEffect(() => {
     const fetchTemperaments = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/temperaments");
+        const response = await axios.get("/temperaments");
         setAllTemperaments(response.data);
       } catch (error) {
         console.error("Error al obtener los temperamentos:", error);
@@ -66,7 +66,7 @@ const Create = () => {
 
     if (Object.keys(errors).length === 0) {//Object.keys(errors): Devuelve un array con las claves del objeto errors
       try {
-        const response = await axios.post(`http://localhost:3001/create`, dogData);
+        const response = await axios.post(`/create`, dogData);
         console.log('Respuesta de la base de datos:', response.data);
         setSuccessMessage(alert("perro creado exitosamente"));
         window.location.href="/home"
